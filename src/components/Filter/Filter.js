@@ -9,7 +9,7 @@ export default function Filter() {
   const dispatch = useDispatch();
 
   return (
-    <div className={style.container}>
+    <div className={style.wrapper}>
       <input
         className={style.input}
         id="filter"
@@ -23,7 +23,7 @@ export default function Filter() {
       />
       <div className={style.cut}></div>
       <label className={style.label} htmlFor="filter">
-        Find contacts by name
+        Find contact by name
       </label>
     </div>
   );

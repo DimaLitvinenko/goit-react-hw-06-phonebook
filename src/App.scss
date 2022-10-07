@@ -1,19 +1,22 @@
 .app {
+  padding-top: 20px;
   text-align: center;
   font-family: sans-serif;
 }
 
 .app-title {
+  font-size: 25px;
   text-align: center;
-  margin-bottom: 60px;
+  color: aqua;
+  margin-bottom: 40px;
   margin-top: 0;
-  text-shadow: 0 2.8px 4.2px green, 0 5.7px 6px blue, 0 10px 11px red,
-    0 14.3px 15.9px purple, 0 16.8px 12px orange, 0 19px 17px teal;
+  text-shadow: 0 4.8px 3.2px green, 0 6.7px 6px blue, 0px 8px 12px red,
+    0 9.3px 9.9px purple, 2px 13.8px 13px orange, 0 10px 7px teal;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .app-title {
-    animation: app-title-spin 10s linear infinite;
+    animation: app-title-spin 3s cubic-bezier(0.075, 0.52, 0.165, 0.3) infinite;
   }
 }
 
@@ -28,8 +31,8 @@
 
 .app-container {
   box-sizing: border-box;
-  width: fit-content;
-  max-width: 500px;
+  // width: fit-content;
+  max-width: 450px;
   min-height: 200px;
   margin: 0 auto;
   padding: 40px 60px;
